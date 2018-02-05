@@ -1,0 +1,12 @@
+工作区 -> 暂存区 -> 版本库
+
+git init	初始化当前目录至版本库中
+git add <filename>	将修改提交到暂存区
+git commit -m "commit message"	将暂存区中已提交的修改，提交至版本库
+git status	查看当前版本库的状态
+git diff	查看当前工作区和版本库的区别
+git reflog	查看最近执行的git命令历史
+git log	[--pretty=oneline]	查看最近到最远的提交日志
+git reset --hard <commitid>/HEAD^	恢复版本到指定提交ID的版本（或上一个版本）
+注：HEAD——表示当前版本，HEAD^——表示上一个版本，HEAD^^——表示上上个版本，HEAD~100——表示往上100个版本
+
