@@ -17,6 +17,7 @@ git remote add origin git@github.com:<github目录名>/<行程版本库名>.git	
 git push -u origin master	第一次将版本库中的文件推送至远程版本库
 注：如创建远程版本库时，选择Initialize this repository with a README，会在远程版本库上生成README.md文件，导致第一次推送报版本差异的错误。应先合并master分支git pull --rebase origin master，会将远程版本库中README.md文件同步至本地。再执行git push -u origin master则可。
 git push origin master	（以后）每次推送修改到远程版本库
+git clone git@github.com:<github目录名>/<行程版本库名>.git 从远程库克隆一个本地库
 
 
 
