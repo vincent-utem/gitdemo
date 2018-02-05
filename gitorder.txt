@@ -9,7 +9,7 @@ git reflog	查看最近执行的git命令历史
 git log	[--pretty=oneline]	查看最近到最远的提交日志
 git reset --hard <commitid>/HEAD^	恢复版本到指定提交ID的版本（或上一个版本）
 注：HEAD——表示当前版本，HEAD^——表示上一个版本，HEAD^^——表示上上个版本，HEAD~100——表示往上100个版本
-git rm	
+git rm	<filename>	删除版本库中的文件
 git checkout -- <filename>	将版本库里的内容替换工作区中的文件内容
 
 
