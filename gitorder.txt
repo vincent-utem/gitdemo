@@ -18,6 +18,7 @@ git branch <branch name>	创建名为<branch name>的分支
 git checkout <branch name>	切换到名为<branch name>的分支
 git merge <branch name>		合并名为<branch name>的分支到当前分支
 git branch -d <branch name>	删除名为<branch name>的分支
+git log --graph --pretty=oneline --abbrev-commit	查看分支合并日志（可以看到分支合并图）
 
 
 
