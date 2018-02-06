@@ -16,7 +16,8 @@ git checkout -b <branch name>	创建<branch name>分支，并切换到<branch na
 git branch	查看所有分支，带*号的为当前分支
 git branch <branch name>	创建名为<branch name>的分支
 git checkout <branch name>	切换到名为<branch name>的分支
-git merge <branch name>		合并名为<branch name>的分支到当前分支
+git merge <branch name>		合并名为<branch name>的分支到当前分支（fast forward模式合并，会导致看不出来曾经做过合并）
+git merge --no-ff -m "merge with no-ff" <branch name>	合并名为<branch name>的分支到当前分支（普通模式合并，合并后的历史有分支，能看出来曾经做过合并）
 git branch -d <branch name>	删除名为<branch name>的分支
 git log --graph --pretty=oneline --abbrev-commit	查看分支合并日志（可以看到分支合并图）
 
