@@ -11,9 +11,14 @@ git reset --hard <commitid>/HEAD^	恢复版本到指定提交ID的版本（或�
 注：HEAD——表示当前版本，HEAD^——表示上一个版本，HEAD^^——表示上上个版本，HEAD~100——表示往上100个版本
 git rm	<filename>	删除版本库中的文件
 git checkout -- <filename>	将版本库里的内容替换工作区中的文件内容
-git checkout -b dev	创建dev分支，然后切换到dev分支
-注：相当于git branch dev和git checkout dev两条命令
+git checkout -b <branch name>	创建<branch name>分支，并切换到<branch name>分支
+注：相当于git branch <branch name>和git checkout <branch name>两条命令
 git branch	查看所有分支，带*号的为当前分支
+git branch <branch name>	创建名为<branch name>的分支
+git checkout <branch name>	切换到名为<branch name>的分支
+git merge <branch name>		合并名为<branch name>的分支到当前分支
+git branch -d <branch name>	删除名为<branch name>的分支
+
 
 
 -------------------------------------------------------------------------
