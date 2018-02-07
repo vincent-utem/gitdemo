@@ -19,13 +19,12 @@ git checkout <branch name>				切换到名为<branch name>的分支
 git merge <branch name>					合并名为<branch name>的分支到当前分支（fast forward模式合并，会导致看不出来曾经做过合并）
 git merge --no-ff -m "merge with no-ff" <branch name>	合并名为<branch name>的分支到当前分支（普通模式合并，合并后的历史有分支，能看出来曾经做过合并）
 git branch -d <branch name>				删除名为<branch name>的分支
+git branch -D <branch name>				强制删除名为<branch name>的分支（在没有被合并前）
 git log --graph --pretty=oneline --abbrev-commit	查看分支合并日志（可以看到分支合并图）
 git stash						把当前工作现场“储藏”起来
 git stash apply						恢复“储藏”起来的工作现场
 git stash drop						删除“储藏”起来的工作现场
 git stash pop						恢复的同时把stash内容也删了，相当于git stash apply和git stash drop两条命令
-
-
 
 
 -------------------------------------------------------------------------
