@@ -1,25 +1,30 @@
 工作区 -> 暂存区 -> 版本库
 
-git init	初始化当前目录至版本库中
-git add <filename>	将修改提交到暂存区
-git commit -m "commit message"	将暂存区中已提交的修改，提交至版本库
-git status	查看当前版本库的状态
-git diff	查看当前工作区和版本库的区别
-git reflog	查看最近执行的git命令历史
-git log	[--pretty=oneline]	查看最近到最远的提交日志
-git reset --hard <commitid>/HEAD^	恢复版本到指定提交ID的版本（或上一个版本）
+git init						初始化当前目录至版本库中
+git add <filename>					将修改提交到暂存区
+git commit -m "commit message"				将暂存区中已提交的修改，提交至版本库
+git status						查看当前版本库的状态
+git diff						查看当前工作区和版本库的区别
+git reflog						查看最近执行的git命令历史
+git log	[--pretty=oneline]				查看最近到最远的提交日志
+git reset --hard <commitid>/HEAD^			恢复版本到指定提交ID的版本（或上一个版本）
 注：HEAD——表示当前版本，HEAD^——表示上一个版本，HEAD^^——表示上上个版本，HEAD~100——表示往上100个版本
-git rm	<filename>	删除版本库中的文件
-git checkout -- <filename>	将版本库里的内容替换工作区中的文件内容
-git checkout -b <branch name>	创建<branch name>分支，并切换到<branch name>分支
+git rm	<filename>					删除版本库中的文件
+git checkout -- <filename>				将版本库里的内容替换工作区中的文件内容
+git checkout -b <branch name>				创建<branch name>分支，并切换到<branch name>分支
 注：相当于git branch <branch name>和git checkout <branch name>两条命令
-git branch	查看所有分支，带*号的为当前分支
-git branch <branch name>	创建名为<branch name>的分支
-git checkout <branch name>	切换到名为<branch name>的分支
-git merge <branch name>		合并名为<branch name>的分支到当前分支（fast forward模式合并，会导致看不出来曾经做过合并）
+git branch						查看所有分支，带*号的为当前分支
+git branch <branch name>				创建名为<branch name>的分支
+git checkout <branch name>				切换到名为<branch name>的分支
+git merge <branch name>					合并名为<branch name>的分支到当前分支（fast forward模式合并，会导致看不出来曾经做过合并）
 git merge --no-ff -m "merge with no-ff" <branch name>	合并名为<branch name>的分支到当前分支（普通模式合并，合并后的历史有分支，能看出来曾经做过合并）
-git branch -d <branch name>	删除名为<branch name>的分支
+git branch -d <branch name>				删除名为<branch name>的分支
 git log --graph --pretty=oneline --abbrev-commit	查看分支合并日志（可以看到分支合并图）
+git stash						把当前工作现场“储藏”起来
+git stash apply						恢复“储藏”起来的工作现场
+git stash drop						删除“储藏”起来的工作现场
+git stash pop						恢复的同时把stash内容也删了，相当于git stash apply和git stash drop两条命令
+
 
 
 
