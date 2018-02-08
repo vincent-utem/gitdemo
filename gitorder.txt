@@ -35,13 +35,13 @@ git config --global user.name "yourname"				配置github目录
 git config --global user.email "youremail@example.com"			配置github邮箱
 ssh-keygen -t rsa -C "youremail@example.com"				创建本地ssh-key
 git remote add origin git@github.com:<github目录名>/<行程版本库名>.git	关联一个远程版本库
-git push -u origin master						第一次将版本库中的文件推送至远程版本库
+git push -u origin <branch name>						第一次将版本库中的文件推送至远程版本库
 注：如创建远程版本库时，选择Initialize this repository with a README，会在远程版本库上生成README.md文件，导致第一次推送报版本差异的错误。应先合并master分支git pull --rebase origin master，会将远程版本库中README.md文件同步至本地。再执行git push -u origin master则可。
-git push origin master							（以后）每次推送修改到远程版本库
+git push origin <branch name>							（以后）每次推送修改到远程版本库
 git clone git@github.com:<github目录名>/<行程版本库名>.git 			从远程库克隆一个本地库
 git checkout -b <本地分支名x> origin/<远程分支名x>				拉取远程分支并创建本地分支（自动切换到该分支上）
 git fetch origin <远程分支名x>:<本地分支名x>					拉取远程分支并创建本地分支（不会自动切换到该分支上，要手动切换。注意：不能在当前分支下，获取远程当前分支内容）
-
+git pull origin <远程分支名x>:<本地分支名x>					拉取远程分支并合并切换到本地对应分支
 
 
 
