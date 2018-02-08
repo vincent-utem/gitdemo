@@ -40,7 +40,7 @@ git push -u origin master						第一次将版本库中的文件推送至远程�
 git push origin master							（以后）每次推送修改到远程版本库
 git clone git@github.com:<github目录名>/<行程版本库名>.git 			从远程库克隆一个本地库
 git checkout -b <本地分支名x> origin/<远程分支名x>				拉取远程分支并创建本地分支（自动切换到该分支上）
-git fetch origin <远程分支名x>:<本地分支名x>					拉取远程分支并创建本地分支（不会自动切换到该分支上，要手动切换）
+git fetch origin <远程分支名x>:<本地分支名x>					拉取远程分支并创建本地分支（不会自动切换到该分支上，要手动切换。注意：不能在当前分支下，获取远程当前分支内容）
 
 
 
