@@ -1,4 +1,4 @@
-工作区 -> 暂存区 -> 版本库
+﻿工作区 -> 暂存区 -> 版本库
 
 git init	初始化当前目录至版本库中
 git add <filename>	将修改提交到暂存区
@@ -34,5 +34,7 @@ git push origin master	（以后）每次推送修改到远程版本库
 git clone git@github.com:<github目录名>/<行程版本库名>.git 从远程库克隆一个本地库
 
 
+-------------------------------------------------------------------------
 
 
+https://www.oschina.net/translate/a-successful-git-branching-model
