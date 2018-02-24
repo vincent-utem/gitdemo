@@ -25,6 +25,12 @@ git stash						把当前工作现场“储藏”起来
 git stash apply						恢复“储藏”起来的工作现场
 git stash drop						删除“储藏”起来的工作现场
 git stash pop						恢复的同时把stash内容也删了，相当于git stash apply和git stash drop两条命令
+git tag							查看所有标签
+git tag <标签名>					在最新的commit上打上标签，默认标签是打在最新提交的commit上的
+git tag <标签名> <commit_id>				在指定commit_id的commit上，打上标签
+git tag -a <标签名> -m "<标签说明>" <commit_id>		在指定commit_id的commit上，打上标签，并标注说明
+git tag -s <标签名> -m "<标签说明>" <commit_id>		在指定commit_id的commit上，打上标签，并标注说明，同时私钥签名这个标签（防止伪造）
+注：签名采用PGP签名，因此，必须首先安装gpg（GnuPG），如果没有找到gpg，或者没有gpg密钥对，就会报错。
 
 
 -------------------------------------------------------------------------
