@@ -40,6 +40,7 @@ cd ~/.ssh/								切换到.ssh目录下，没有则创建一个
 git config --global user.name "yourname"				配置github目录
 git config --global user.email "youremail@example.com"			配置github邮箱
 ssh-keygen -t rsa -C "youremail@example.com"				创建本地ssh-key
+git clone <远程版本库地址>						克隆远程版本库
 git remote -v								查看远程版本库地址
 git remote add origin git@github.com:<github目录名>/<行程版本库名>.git	关联一个远程版本库
 git push -u origin <branch name>						第一次将版本库中的文件推送至远程版本库
